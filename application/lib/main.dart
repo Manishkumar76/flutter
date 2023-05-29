@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
            headline1:TextStyle(fontSize: 40,fontWeight:FontWeight.w900 ,color: Colors.black,fontStyle: FontStyle.italic),
            subtitle1: TextStyle(fontSize: 20,fontStyle: FontStyle.italic),
          ),
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.lightBlue,
       ),
       home: IntroPage(),
     );
@@ -49,19 +49,22 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body:Container(
+      body:
+
+      Container(
                width: double.infinity,
                height: double.infinity,
                color: Colors.blue.shade100,
-          child:InkWell(
-            child:Container(
 
-                child: CircleAvatar(child:Icon(Icons.account_balance,size: 300,))),
-          onTap: (){
-            Navigator.push( context,MaterialPageRoute(builder: (context)=>ItemPage()));
-
-      },
-          )
+//           child:InkWell(
+//             child:Container(
+//
+//                 child: CircleAvatar(child:Icon(Icons.account_balance,size: 300,))),
+//           onTap: (){
+//             Navigator.push( context,MaterialPageRoute(builder: (context)=>ItemPage()));
+//
+//       },
+//           )
 
         // child:  ListTile(
         // leading:Icon(Icons.lock),
