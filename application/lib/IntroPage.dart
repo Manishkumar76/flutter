@@ -21,8 +21,10 @@ class _IntroPageState extends State<IntroPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.indigoAccent,
+       body:AnimatedContainer(
+         duration: Duration(seconds: 5),
 
-      body: Container(
         color: Colors.blueAccent,
         child: Center(child: Text("welcome",style: TextStyle(fontSize: 50,fontWeight: FontWeight.w900,
         ),
